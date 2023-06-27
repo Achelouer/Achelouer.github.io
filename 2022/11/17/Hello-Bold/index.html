@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    君の名は
+  </title>
+  <link rel="icon" href="/imgs/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/plugins/highlight/styles/atom-one-dark.css">
+  <!-- Gitalk -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script>
+      window.addEventListener('load', () => {
+        const gitalkContainer = document.getElementById('gitalk-container');
+        if (!gitalkContainer) return;
+        const gitalk = new Gitalk({
+          clientID: '',
+          clientSecret: '',
+          repo: '',      // The repository of store comments '
+          owner: '',
+          admin: ['xx'],
+          id: location.pathname,      // Ensure uniqueness and length less than 50
+          distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+        gitalk.render('gitalk-container');
+      })
+    </script>
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body>
+    <nav>
+  <div class="nav-item logo">
+    <a href="/">
+      <button class="btn btn-hover">
+        <span>
+          君の名は
+        </span>
+      </button>
+    </a>
+  </div>
+  
+    <div class="nav-item"><a href="/">
+        主页
+      </a></div>
+    
+    <div class="nav-item"><a href="/archives">
+        时间轴
+      </a></div>
+    
+    <div class="nav-item"><a href="/tags">
+        标签
+      </a></div>
+    
+    <div class="nav-item"><a href="/about">
+        关于
+      </a></div>
+    
+</nav>
+    <main>
+        <div class="post">
+    <article class="card post-article">
+  
+              
+                  <h3 class="article-title-detail"><span>
+                      你好，博客
+                    </span></h3>
+                  <div class="posted-on-detail">『22年11月17日』</div>
+                  
+                    
+                      <div class="article-top-meta">
+                        
+                      </div>
+                      
+
+                          <div class="article-content">
+                            <div class="entry">
+                              
+                                    <p>文章记录了使用Hexo搭建博客，方便随后查看</p>
+<h2 id="应用支持"><a href="#应用支持" class="headerlink" title="应用支持"></a>应用支持</h2><h3 id="1-hexo"><a href="#1-hexo" class="headerlink" title="1.hexo"></a>1.hexo</h3><h4 id="hexo基础命令"><a href="#hexo基础命令" class="headerlink" title="hexo基础命令"></a>hexo基础命令</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo三件套：</span><br><span class="line">hexo g --</span><br><span class="line">hexo clear --</span><br><span class="line">hexo d --</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="2-git"><a href="#2-git" class="headerlink" title="2.git"></a>2.git</h3><h4 id="git使用命令"><a href="#git使用命令" class="headerlink" title="git使用命令"></a>git使用命令</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git init 初始化</span><br><span class="line">git clone url 克隆一个仓库</span><br></pre></td></tr></table></figure>
+<h3 id="3-node-js"><a href="#3-node-js" class="headerlink" title="3.node.js"></a>3.node.js</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Hexo-amp-amp-主题"><a href="#Hexo-amp-amp-主题" class="headerlink" title="Hexo&amp;&amp;主题"></a>Hexo&amp;&amp;主题</h2><h3 id="0-Hexo"><a href="#0-Hexo" class="headerlink" title="0.Hexo"></a>0.Hexo</h3><h4 id="0-1-config-yml"><a href="#0-1-config-yml" class="headerlink" title="0-1 _config.yml"></a>0-1 _config.yml</h4><p><strong>网站</strong></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>title</code></td>
+<td align="left">网站标题</td>
+</tr>
+<tr>
+<td align="left"><code>subtitle</code></td>
+<td align="left">网站副标题</td>
+</tr>
+<tr>
+<td align="left"><code>description</code></td>
+<td align="left">网站描述</td>
+</tr>
+<tr>
+<td align="left"><code>keywords</code></td>
+<td align="left">网站的关键词。支持多个关键词。</td>
+</tr>
+<tr>
+<td align="left"><code>author</code></td>
+<td align="left">您的名字</td>
+</tr>
+</tbody></table>
+</blockquote>
+<p><strong>网址</strong></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">描述</th>
+<th align="left">默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>url</code></td>
+<td align="left">网址, 必须以 <code>http://</code> 或 <code>https://</code> 开头</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>root</code></td>
+<td align="left">网站根目录</td>
+<td align="left"><code>url&#39;s pathname</code></td>
+</tr>
+<tr>
+<td align="left"><code>permalink</code></td>
+<td align="left">文章的 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/permalinks">永久链接</a> 格式</td>
+<td align="left"><code>:year/:month/:day/:title/</code></td>
+</tr>
+</tbody></table>
+</blockquote>
+<p><strong>目录</strong></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">描述</th>
+<th align="left">默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>source_dir</code></td>
+<td align="left">资源文件夹，这个文件夹用来存放内容。</td>
+<td align="left"><code>source</code></td>
+</tr>
+<tr>
+<td align="left"><code>public_dir</code></td>
+<td align="left">公共文件夹，这个文件夹用于存放生成的站点文件。</td>
+<td align="left"><code>public</code></td>
+</tr>
+<tr>
+<td align="left"><code>tag_dir</code></td>
+<td align="left">标签文件夹</td>
+<td align="left"><code>tags</code></td>
+</tr>
+<tr>
+<td align="left"><code>archive_dir</code></td>
+<td align="left">归档文件夹</td>
+<td align="left"><code>archives</code></td>
+</tr>
+<tr>
+<td align="left"><code>category_dir</code></td>
+<td align="left">分类文件夹</td>
+<td align="left"><code>categories</code></td>
+</tr>
+<tr>
+<td align="left"><code>code_dir</code></td>
+<td align="left">Include code 文件夹，<code>source_dir</code> 下的子目录</td>
+<td align="left"><code>downloads/code</code></td>
+</tr>
+</tbody></table>
+</blockquote>
+<p><strong>文章</strong></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">描述</th>
+<th align="left">默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>new_post_name</code></td>
+<td align="left">新文章的文件名称</td>
+<td align="left">:title.md</td>
+</tr>
+<tr>
+<td align="left"><code>default_layout</code></td>
+<td align="left">预设布局</td>
+<td align="left">post</td>
+</tr>
+<tr>
+<td align="left"><code>auto_spacing</code></td>
+<td align="left">在中文和英文之间加入空格</td>
+<td align="left">false</td>
+</tr>
+<tr>
+<td align="left"><code>titlecase</code></td>
+<td align="left">把标题转换为 title case</td>
+<td align="left">false</td>
+</tr>
+<tr>
+<td align="left"><code>external_link</code></td>
+<td align="left">在新标签中打开链接</td>
+<td align="left">true</td>
+</tr>
+<tr>
+<td align="left"><code>external_link.enable</code></td>
+<td align="left">在新标签中打开链接</td>
+<td align="left"><code>true</code></td>
+</tr>
+<tr>
+<td align="left"><code>external_link.field</code></td>
+<td align="left">对整个网站（<code>site</code>）生效或仅对文章（<code>post</code>）生效</td>
+<td align="left"><code>site</code></td>
+</tr>
+<tr>
+<td align="left"><code>external_link.exclude</code></td>
+<td align="left">需要排除的域名。主域名和子域名如 <code>www</code> 需分别配置</td>
+<td align="left"><code>[]</code></td>
+</tr>
+<tr>
+<td align="left"><code>filename_case</code></td>
+<td align="left">把文件名称转换为 (1) 小写或 (2) 大写</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left"><code>render_drafts</code></td>
+<td align="left">显示草稿</td>
+<td align="left">false</td>
+</tr>
+<tr>
+<td align="left"><code>post_asset_folder</code></td>
+<td align="left">启动 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/asset-folders">Asset 文件夹</a></td>
+<td align="left">false</td>
+</tr>
+<tr>
+<td align="left"><code>relative_link</code></td>
+<td align="left">把链接改为与根目录的相对位址</td>
+<td align="left">false</td>
+</tr>
+<tr>
+<td align="left"><code>future</code></td>
+<td align="left">显示未来的文章</td>
+<td align="left">true</td>
+</tr>
+<tr>
+<td align="left"><code>highlight</code></td>
+<td align="left">代码块的设置, 请参考 <a target="_blank" rel="noopener" href="https://hexo.io/docs/syntax-highlight#Highlight-js">Highlight.js</a> 进行设置</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>prismjs</code></td>
+<td align="left">代码块的设置, 请参考 <a target="_blank" rel="noopener" href="https://hexo.io/docs/syntax-highlight#PrismJS">PrismJS</a> 进行设置</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+</blockquote>
+<h2 id="文章操作"><a href="#文章操作" class="headerlink" title="文章操作"></a>文章操作</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new [文件名] <span class="comment">#创建一个新文件</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+                                      
+                            </div>
+                          </div>
+                          <div class="article-footer">
+
+                          </div>
+</article>
+        
+            <div id="gitalk-container" class="card"></div>
+            
+</div>
+    </main>
+    <div class="footer">
+  <div class="copy">
+    &copy;
+      2023 君の名は。|
+        によって作成されたテーマ<a href="https://github.com/JackZong" target="_blank" title="Theme created by @J.zong">@J.zong</a>
+  </div>
+  <div class="hexo">
+    <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+  </div>
+  <div class="hexo" title="Powered by Hexo">
+    搭載 <a href="http://hexo.io/" target="_blank">Hexo</a> | <a href="javascript:void(0);" id="bgToggle"> 背景画像 </a>
+  </div>
+</div>
+
+<script>
+  window.onload = function () {
+    const withBg = localStorage.getItem('withBg');
+    if (withBg === 'true') {
+      document.body.classList.add('with-bg');
+      document.getElementById('bgToggle').classList.add('active');
+    }
+
+    document.getElementById('bgToggle').addEventListener('click', function (e) {
+      e.preventDefault();
+      const withBg = localStorage.getItem('withBg');
+      if (withBg === 'true') {
+        localStorage.setItem('withBg', 'false');
+        document.body.classList.remove('with-bg');
+        document.getElementById('bgToggle').classList.remove('active');
+      } else {
+        localStorage.setItem('withBg', 'true');
+        document.body.classList.add('with-bg');
+        document.getElementById('bgToggle').classList.add('active');
+      }
+    })
+  }
+</script>
+
+
+  <script src="/plugins/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+    
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      
+        </body>
+
+        </html>
+</body>
+</html>
