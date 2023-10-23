@@ -1,0 +1,113 @@
+#top {
+    width: 100%;
+    height: 28px;
+    background-color: rgba(30, 97, 116, 0.219);
+}
+/*区块1*/
+#concent_one{
+    width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    background: rgba(60, 65, 65, 0.329);
+    overflow: hidden;
+    background-image: url(../img/miui_add.webp);
+}
+
+#concent_one h1{
+    font-size: 50px;
+    position: relative;
+    top:5vh;left: 5vh;
+    color: white;
+}
+#concent_one h2{
+    font-size: 30px;
+    position: relative;
+    left: 5vh;
+    color: white;
+}
+/*区块2*/
+#concent_two{
+    width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    background: rgba(15, 15, 15, 0.329);
+    background-image: url(../img/miui.webp);
+    background-position: -400px;
+    overflow: hidden;
+}
+
+#concent_two h2{
+    font-size: 30px;
+    position: relative;
+    left: 5vh;
+    color: black;
+}
+
+#concent_two img{
+    position: relative;
+    top: -45px;right:-230px;
+}
+
+/*区块3*/
+
+#concent_three{
+    width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    background: rgba(60, 65, 65, 0.329);
+    overflow: hidden;
+}
+
+#concent_three h2{
+    font-size: 30px;
+    position: relative;
+    left: 5vh;
+    color: white;
+    z-index: 999;
+}
+
+#concent_three img:nth-child(2){
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    z-index: 50;
+    
+}
+#concent_three img:nth-child(3){
+    position: relative;
+    top: -650px;left: -330px;
+}
+
+/*区块4*/
+
+#concent_four{
+    width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    background-image: url(../img/miui_add_four.webp);
+    background-size: 1000px 100%;
+}
+
+#concent_four h2{
+    font-size: 30px;
+    position: relative;
+    left: 5vh;
+    color: black;
+}
+
+/*底部*/
+footer{
+    position: relative;
+    top:10px;
+    background-color: black;
+    color: rgb(61, 61, 61);
+}
+footer ul,h3{
+    position: relative;
+    left: 5vw;
+    list-style: none;
+}
+footer ul{
+    line-height: 20px;
+}

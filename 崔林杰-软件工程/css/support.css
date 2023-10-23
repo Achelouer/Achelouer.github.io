@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+#top {
+    width: 100%;
+    height: 28px;
+    background-color: rgba(58, 108, 122, 0.514);
+}
+
+#concent{
+    width: 100vw;
+    height: 100%;
+    background-color: black;
+}
+
+h1{
+    font-size: 50px;
+    position: relative;
+    top:5vh;left: 5vh;
+    color: white;
+}
+h2{
+    font-size: 30px;
+    position: relative;
+    left: 5vh;
+    color: white;
+}
+/*文字块1*/
+#concent{
+    height: 100vh;
+}
+#text_one{
+    width: 80vw;
+    height: 30vh;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.158);
+}
+#text_one p:nth-child(1){
+    color: white;
+    font-size: 15px;
+    position: relative;
+    left: 4vh;top: 2vh;
+}
+#text_one p:nth-child(3){
+    width: 70vw;
+    color: rgb(73, 71, 71);
+    font-size: 15px;
+    position: relative;
+    left: 4vh;top: 2vh;
+}
+
+#text_two{
+    background-color: black;
+    height: 30vh;
+    overflow: hidden;
+}
+#text_two p{
+    width: 80vw;
+    font-size: 15px;
+    position: relative;
+    top:5vh;left: 5vh;
+    color: rgb(73, 71, 71);
+}
+
+/*底部*/
+footer{
+    background-color: black;
+    color: rgb(61, 61, 61);
+}
+footer ul,h3{
+    list-style: none;
+    position: relative;
+    left: 5vw;
+}
+footer ul{
+    line-height: 20px;
+}

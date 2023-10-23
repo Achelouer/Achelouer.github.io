@@ -1,0 +1,154 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /*背景*/
+    
+    section {
+        /* 相对定位 */
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        /* linear-gradient() 函数用于创建一个表示两种或多种颜色线性渐变的图片 */
+        background: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+    }
+    /* 背景颜色 */
+    
+    section .color {
+        /* 绝对定位 */
+        position: absolute;
+        /* 使用filter(滤镜) 属性，给图像设置高斯模糊*/
+        filter: blur(200px);
+    }
+    /* :nth-child(n) 选择器匹配父元素中的第 n 个子元素 */
+    
+    section .color:nth-child(1) {
+        top: -350px;
+        width: 600px;
+        height: 600px;
+        background: #ff359b;
+    }
+    
+    section .color:nth-child(2) {
+        bottom: -150px;
+        left: 100px;
+        width: 500px;
+        height: 500px;
+        background: #fffd87;
+    }
+    
+    section .color:nth-child(3) {
+        bottom: 50px;
+        right: 100px;
+        width: 500px;
+        height: 500px;
+        background: #00d2ff;
+    }
+    
+    .box {
+        position: relative;
+    }
+    
+    a {
+        text-decoration: none;
+        border: 2px solid rgba(0, 0, 0, 0.336);
+        display: block;
+        /*行内元素转化为块级元素*/
+        text-align: center;
+    }
+    
+    p {
+        font-size: 24px;
+        color: #757575;
+    }
+    
+    #wrap {
+        width: 530px;
+        margin: 20px auto 0;
+        height: 1000px;
+    }
+    
+    #form-wrap {
+        overflow: hidden;
+        height: 447px;
+        position: relative;
+        top: 0px;
+        transition: all 1s ease-in-out .3s;
+    }
+    
+    #form-wrap:before {
+        content: "";
+        position: absolute;
+        bottom: 128px;
+        left: 0px;
+        background: url('../img/before.png');
+        width: 530px;
+        height: 317px;
+    }
+    
+    #form-wrap:after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        background: url('../img/after.png');
+        width: 530px;
+        height: 259px;
+    }
+    
+    #form-wrap.hide:after,
+    #form-wrap.hide:before {
+        display: none;
+    }
+    
+    #form-wrap:hover {
+        height: 857px;
+        top: -200px;
+    }
+    
+    form {
+        background: url('../img/letter_bg.png');
+        position: relative;
+        top: 200px;
+        overflow: hidden;
+        height: 220px;
+        width: 400px;
+        margin: 0px auto;
+        padding: 20px;
+        border: 1px solid white;
+        border-right: 3px;
+        transition: all 1s ease-in-out .3s;
+    }
+    
+    #form-wrap:hover form {
+        height: 530px;
+    }
+    
+    lable {
+        margin: 11px 20px 0 0;
+        font-size: 15px;
+        color: gray;
+        text-transform: uppercase;
+    }
+    
+    input[type=text],
+    input[type=number],
+    textarea {
+        font: 14px normal uppercase, arial, serif;
+        color: dimgray;
+        background: none;
+        width: 380px;
+        height: 37px;
+        padding: 0px 10px;
+        margin: 0 0 10px 0;
+        border: 1px solid #BDBDBD;
+        border-radius: 5px;
+    }
+    
+    textarea {
+        height: 80px;
+        padding-top: 14px;
+    }

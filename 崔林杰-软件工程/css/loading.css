@@ -1,0 +1,75 @@
+.loadingout {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 30vh;
+    /*vh屏幕自适应时的长*/
+    position: relative;
+    /* 相对位置（子绝父相） */
+    border: 5px solid lightgreen;
+    -webkit-animation: turn 2s linear infinite;
+}
+
+.loadingout .loadingin {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: lightgreen;
+    position: absolute;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -15px;
+    -webkit-animation: ChangeBgColor 2s linear infinite;
+}
+
+@-webkit-keyframes ChangeBgColor {
+    0% {
+        background: lightgoldenrodyellow;
+    }
+    50% {
+        background: lightblue;
+    }
+    100% {
+        background: lightcyan;
+    }
+}
+
+@-webkit-keyframes turn {
+    0% {
+        -webkit-transform: rotate(0deg);
+        border-color: lightgoldenrodyellow;
+    }
+    50% {
+        border-color: lightblue;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        border-color: lightcyan;
+    }
+}
+
+#text {
+    /* 文字大小，宽度，位置，渐变色 */
+    font-size: 50px;
+    font-weight: 500px;
+    margin: 0 auto;
+    position: absolute;
+    background: linear-gradient(to right, pink, lightblue, skyblue, yellow);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+div {
+    /* 使正在加载居中 */
+    text-align: center;
+}
+
+#xiahuaxian {
+    /* 定义一个渐变的下划线 */
+    height: 1px;
+    background: linear-gradient(to right, yellow, lightblue, skyblue, pink);
+    -webkit-background-clip: border-box;
+    color: transparent;
+}

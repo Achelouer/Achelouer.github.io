@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*顶部*/
+
+#top {
+    width: 100%;
+    height: 28px;
+    background-color: rgba(30, 98, 116, 0.18);
+}
+li{
+    list-style: none;
+}
+#top ul li:nth-child(1) {
+    position: absolute;
+    left: 0px;
+}
+
+#top ul li:nth-child(2) {
+    position: absolute;
+    right: 45%;
+}
+
+/*菜单*/
+#menu a{
+    text-decoration: none;
+    color: black;
+}
+
+#menu{
+    position: relative;
+    top: 20px;
+}
+#menu td{
+    width: 100vw;
+    height: 8vh;
+    text-align: center;
+    border-bottom:1px solid black;
+}
+#menu tr{
+    letter-spacing: 5px;
+}
+
+/*底部*/
+footer a{
+    color: white;
+    text-decoration: none;
+}
+table tr td:hover a{
+    color: rgba(109, 152, 233, 0.575);
+}
+
+footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+}
+footer table{
+    position: relative;
+    left: 10px;
+}
+

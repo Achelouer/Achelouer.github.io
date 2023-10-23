@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*顶部*/
+
+#top {
+    width: 100%;
+    height: 28px;
+    background-color: rgba(30, 98, 116, 0.18);
+}
+li{
+    list-style: none;
+}
+#top ul li:nth-child(1) {
+    position: absolute;
+    left: 0px;
+}
+
+#top ul li:nth-child(2) {
+    position: absolute;
+    right: 45%;
+}
+
+/*主体内容—1-背景*/
+
+#concent_one {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+}
+/* 背景颜色 */
+#concent_one .color {
+    /* 绝对定位 */
+    position: absolute;
+    /* 使用filter(滤镜) 属性，给图像设置高斯模糊*/
+    filter: blur(200px);
+}
+
+#concent_one .color:nth-child(1) {
+    top: -350px;
+    width: 600px;
+    height: 600px;
+    background: #ff359b;
+}
+
+#concent_one .color:nth-child(2) {
+    bottom: -150px;
+    left: 100px;
+    width: 500px;
+    height: 500px;
+    background: #fffd87;
+}
+
+#concent_one .color:nth-child(3) {
+    bottom: 50px;
+    right: 100px;
+    width: 500px;
+    height: 500px;
+    background: #00d2ff;
+}
+
+.box{
+    position: relative;
+}
+
+/*主体内容—1-文字效果*/
+#text {
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.685);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.356);
+    text-align: center;
+    position: relative;
+    top: -23vh;
+}
+.box b:nth-child(1){
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0.5px solid rgba(241, 182, 243, 0.3);
+    border-radius: 20px;
+    position: absolute;
+    top:0vh;right: -20vw;
+}
+.box b:nth-child(3){
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0.5px solid rgba(174, 223, 226, 0.3);
+    position: relative;
+    border-radius: 20px;
+    top: -23vh;right: 20vw;
+}
+/*主体内容—1-轮播文字*/
+#chance_text{
+    margin-bottom: -100px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    height: 300px;
+    width: 200px;
+}
+#chance_text ul{
+    margin-top: -300px;  
+    animation: chance_text 5s infinite;
+}
+#chance_text li{
+    height: 300px;
+    width: 200px;
+}
+@keyframes chance_text{
+    0%{margin-top: 0px;}
+    100%{margin-top: -300px;}
+}
+
+/*主体内容—2-背景*/
+
+#concent_two{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+#concent_two h1{
+    position: relative;
+    top:5vh;left: 5vh;
+    color: white;
+}
+
+
+#concent_three{
+    width: 100vw;
+    height: 100vh;
+}
+
+#concent_three h1{
+    position: relative;
+    top:5vh;left: 5vh;
+}
+
+#concent_four{
+    width: 100vw;
+    height: 2099px;
+    background-color: black;
+}
+
+#concent_four ul h1{
+    width: 100vw;
+    text-align: center;
+    color:white;
+}
+#concent_four ul li{
+    text-align: center;
+    width: 100vw;
+    background-image: url(../img/R-C.jpg);
+    background-size: 100vw 100vh;
+}
+#concent_four ul li:nth-child(1){
+    color: white;
+    font-size: 40px;
+}
+#concent_four ul li:nth-child(2){
+    float: right;
+    font-size: 40px;
+    color: white;
+}
+
+/*底部*/
+footer{
+    position: relative;
+    top:10px;
+    background-color: black;
+    color: rgb(61, 61, 61);
+}
+footer ul,h3{
+    position: relative;
+    left: 5vw;
+}
+footer ul{
+    line-height: 20px;
+}
